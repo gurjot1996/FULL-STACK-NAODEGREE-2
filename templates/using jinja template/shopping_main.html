@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Add to cart</h1>
+<form>
+	<input type="text" name="food">
+	<input type="submit" name="submit" value="Add">
+	<h1>Shopping List</h1>
+	<ul>
+		{% for x in items %} 
+			<input type="hidden" value="{{x|safe}}" name="food">
+			<li>{{x|safe}}</li>
+		{% endfor %}
+	</ul>
+</form>
+{% endblock %}
