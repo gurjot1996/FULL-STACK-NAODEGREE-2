@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+	<style type="text/css">
+		p{
+			color:red;
+		}
+		*{
+			padding: 5px;
+		}
+	</style>
+</head>
+<form method="post">
+<table>
+	<tr>
+		<td>Username</td>
+		<td><input type="text" name="usernameInput" value="{{usernameInput}}"></td>
+		<td><p name="u_error">{{usernameError}}</p></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name="passwordInput" value="{{passwordInput}}" ></td>
+		<td><p name="p_error">{{passwordError}}</p></td>
+	</tr>
+	<tr>
+		<td>Verify Password</td>
+		<td><input type="password" name="verifyPasswordInput" value="{{verifyPasswordInput}}"></td>
+		<td><p name="vp_error">{{verifyError}}</p></td>
+	</tr>
+	<tr>
+		<td>Email(Optional)</td>
+		<td><input type="text" name="emailInput" value="{{emailInput}}"></td>
+		<td><p name="email_error">{{emailError}}</p></td>
+	</tr>	
+</table>
+<br>
+<br>
+<br>
+<input type="submit" name="submit">
+</form>
+
+{% endblock %}
