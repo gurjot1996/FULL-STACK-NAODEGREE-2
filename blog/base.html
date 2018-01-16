@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+  <link type="text/css" rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+	<div id="container"> 
+	<a href={{linker}}><h1 class="header">{{pagename}} Page</h1></a>
+	<hr>
+	{% block content %}
+	{% endblock %}
+</div>
+</body>
+</html>

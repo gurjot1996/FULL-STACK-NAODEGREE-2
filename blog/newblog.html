@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form method="post" class="form-body">
+	<label>
+		<strong>Title</strong><br>
+		<input type="text" name="title" value="{{title}}" onfocus="this.value=' '">
+	</label><br><br>
+	<label>
+		<strong>Content</strong><br>
+		<textarea name="content" rows="20" cols="30" onfocus="this.value=' '" class="area">{{content}}</textarea>
+	</label><br>
+	<p name="error" class="error">{{error}}</p><br>
+	<input type="submit" name="submit">
+</form>
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{% for x in data %}
+<div class="blogpost">
+	<div class="blog-heading">
+		<div class="blog-name">{{x.title}}
+		</div>
+		<div class="blog-date">{{x.created}}
+		</div>
+	</div>
+	<div class="blog-content">{{x.content}}
+	</div>
+</div>
+	<hr>
+{% endfor %}
+<br>
+
+{% endblock %}

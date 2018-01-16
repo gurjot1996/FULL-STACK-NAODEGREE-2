@@ -1,0 +1,33 @@
+.errorMessage{
+	color: red
+}
+
+.heading{
+	display:flex;
+}
+
+.title{
+	width: 50%
+	font-weight:bold;
+	text-align:left;
+}
+
+.created{
+	width:50%;
+	text-align: right;
+}
+
+.content{
+	margin:10px;
+	width:100%;
+}
+
+.post{
+	width:600px;
+	height:minmax(50px,auto);
+	margin-right: auto;
+	margin-left: auto;
+}
+.common{
+	color:red;
+}
